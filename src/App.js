@@ -6,7 +6,6 @@ function App() {
   const [user, setUser] = useState(null);
 
   const printInConsole = () => {
-    const msg = '%c Falaê curioso 👋! Segue nóis: github.com/tupizz';
     const styles = [
       'font-size: 16px',
       'font-family: monospace',
@@ -22,7 +21,7 @@ function App() {
 
   useEffect(() => {
     printInConsole();
-    fetch('https://gitconnected.com/v1/portfolio/tupizz')
+    fetch('https://gitconnected.com/v1/portfolio/viniciusmf39')
       .then(res => res.json())
       .then(userData => {
         setTimeout(() => {
